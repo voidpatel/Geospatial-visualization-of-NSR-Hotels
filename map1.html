@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da65da5dac174c4ba2580cae2c15ffe0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_da65da5dac174c4ba2580cae2c15ffe0" ></div>
+        
+</body>
+<script>    
+    
+            var map_da65da5dac174c4ba2580cae2c15ffe0 = L.map(
+                "map_da65da5dac174c4ba2580cae2c15ffe0",
+                {
+                    center: [42.76190268419645, -98.79313853592375],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3975b7cb0f0645528c5897aeb1ac58f0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da65da5dac174c4ba2580cae2c15ffe0);
+        
+    
+            var marker_cluster_8d45ca893a474ed98dc9900e2808a437 = L.markerClusterGroup(
+                {}
+            );
+            map_da65da5dac174c4ba2580cae2c15ffe0.addLayer(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var marker_e6e4c4e0067b47a9ae0beb6032ef9aae = L.marker(
+                [32.75794, -117.17581],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_f6da296f1568458cb8adf45afb256fbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e6e4c4e0067b47a9ae0beb6032ef9aae.setIcon(icon_f6da296f1568458cb8adf45afb256fbe);
+        
+    
+        var popup_9f86fd180d694935954c6cb0a58f66a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d92469ad366e4adc9800b8b30a957a7f = $(`<div id="html_d92469ad366e4adc9800b8b30a957a7f" style="width: 100.0%; height: 100.0%;">Candlewood Inn and Suites, CA</div>`)[0];
+            popup_9f86fd180d694935954c6cb0a58f66a3.setContent(html_d92469ad366e4adc9800b8b30a957a7f);
+        
+
+        marker_e6e4c4e0067b47a9ae0beb6032ef9aae.bindPopup(popup_9f86fd180d694935954c6cb0a58f66a3)
+        ;
+
+        
+    
+    
+            var marker_d5708064aff94fe9ba9588a89b7b7014 = L.marker(
+                [39.66151, -106.82462],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_6ed13e1ff4564cc79b8cfbfc5f7a67e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5708064aff94fe9ba9588a89b7b7014.setIcon(icon_6ed13e1ff4564cc79b8cfbfc5f7a67e0);
+        
+    
+        var popup_fbd38c39042040278c265d16601cf1eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3b9252c3bb546bab7c73bdbeeaa50d4 = $(`<div id="html_c3b9252c3bb546bab7c73bdbeeaa50d4" style="width: 100.0%; height: 100.0%;">Hawthorn Suites by Wyndham Eagle, CO</div>`)[0];
+            popup_fbd38c39042040278c265d16601cf1eb.setContent(html_c3b9252c3bb546bab7c73bdbeeaa50d4);
+        
+
+        marker_d5708064aff94fe9ba9588a89b7b7014.bindPopup(popup_fbd38c39042040278c265d16601cf1eb)
+        ;
+
+        
+    
+    
+            var marker_9ca0ceea3453458eaf828cc3bc58f3e6 = L.marker(
+                [31.4423, -100.50014],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_e0f073e4e10b4ada91dbef410fc92298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9ca0ceea3453458eaf828cc3bc58f3e6.setIcon(icon_e0f073e4e10b4ada91dbef410fc92298);
+        
+    
+        var popup_4dc460b64c7f4158a526f544205e898a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_964b1a96d24747d2a91507832185f314 = $(`<div id="html_964b1a96d24747d2a91507832185f314" style="width: 100.0%; height: 100.0%;">Cmfort Suites San Angelo, TX</div>`)[0];
+            popup_4dc460b64c7f4158a526f544205e898a.setContent(html_964b1a96d24747d2a91507832185f314);
+        
+
+        marker_9ca0ceea3453458eaf828cc3bc58f3e6.bindPopup(popup_4dc460b64c7f4158a526f544205e898a)
+        ;
+
+        
+    
+    
+            var marker_08044fefe9b740d5a51ed0750e271e13 = L.marker(
+                [32.51973, -93.70964],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_86398ce41e584ade9b93c2dafb55cbc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_08044fefe9b740d5a51ed0750e271e13.setIcon(icon_86398ce41e584ade9b93c2dafb55cbc8);
+        
+    
+        var popup_b9849a21919144f080f324ae393caa87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_126ded3d509942bdbce1e59853900478 = $(`<div id="html_126ded3d509942bdbce1e59853900478" style="width: 100.0%; height: 100.0%;">Extended Studio Suite Hotel, LA</div>`)[0];
+            popup_b9849a21919144f080f324ae393caa87.setContent(html_126ded3d509942bdbce1e59853900478);
+        
+
+        marker_08044fefe9b740d5a51ed0750e271e13.bindPopup(popup_b9849a21919144f080f324ae393caa87)
+        ;
+
+        
+    
+    
+            var marker_dc9161e317d349738347a431e741d5af = L.marker(
+                [32.30865, -90.16313],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_f7612428461545e28f4bd8fdb76934c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc9161e317d349738347a431e741d5af.setIcon(icon_f7612428461545e28f4bd8fdb76934c4);
+        
+    
+        var popup_530f5c12c1634432a7bf6b662798348e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_030e24030e054b27ae4ef6fe2c9eb0df = $(`<div id="html_030e24030e054b27ae4ef6fe2c9eb0df" style="width: 100.0%; height: 100.0%;">Extended Studio Hotel, MS</div>`)[0];
+            popup_530f5c12c1634432a7bf6b662798348e.setContent(html_030e24030e054b27ae4ef6fe2c9eb0df);
+        
+
+        marker_dc9161e317d349738347a431e741d5af.bindPopup(popup_530f5c12c1634432a7bf6b662798348e)
+        ;
+
+        
+    
+    
+            var marker_1b8605178f294bc2bc06f2b6bf1f09c4 = L.marker(
+                [33.55658, -112.11399],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_e58f1ad53cdc4874a78c73564a4fd5d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1b8605178f294bc2bc06f2b6bf1f09c4.setIcon(icon_e58f1ad53cdc4874a78c73564a4fd5d9);
+        
+    
+        var popup_827999728709454d9a514824d7fa08b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2eed48a1afb3409cbe880a93713d4ebd = $(`<div id="html_2eed48a1afb3409cbe880a93713d4ebd" style="width: 100.0%; height: 100.0%;">Phoenix Inn, AZ</div>`)[0];
+            popup_827999728709454d9a514824d7fa08b7.setContent(html_2eed48a1afb3409cbe880a93713d4ebd);
+        
+
+        marker_1b8605178f294bc2bc06f2b6bf1f09c4.bindPopup(popup_827999728709454d9a514824d7fa08b7)
+        ;
+
+        
+    
+    
+            var marker_700f21f1c9504938aa2fe4d8b4546630 = L.marker(
+                [35.46708, -120.65055],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_378cb55c60df4a8fbfbe580c43a7285f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_700f21f1c9504938aa2fe4d8b4546630.setIcon(icon_378cb55c60df4a8fbfbe580c43a7285f);
+        
+    
+        var popup_d20f0769763b4a1cb88629ef017df62b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fa8f24a7a3d4daaa539d3e7e03d8d7a = $(`<div id="html_0fa8f24a7a3d4daaa539d3e7e03d8d7a" style="width: 100.0%; height: 100.0%;">Motel 6 Atascadero, CA</div>`)[0];
+            popup_d20f0769763b4a1cb88629ef017df62b.setContent(html_0fa8f24a7a3d4daaa539d3e7e03d8d7a);
+        
+
+        marker_700f21f1c9504938aa2fe4d8b4546630.bindPopup(popup_d20f0769763b4a1cb88629ef017df62b)
+        ;
+
+        
+    
+    
+            var marker_e9ab892c49ab4a1a94fd3dc8248b7624 = L.marker(
+                [34.66338, -120.45868],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_ef8b3bf0a0714e27afe4bdafcc58b86d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e9ab892c49ab4a1a94fd3dc8248b7624.setIcon(icon_ef8b3bf0a0714e27afe4bdafcc58b86d);
+        
+    
+        var popup_514fd57a7e6b43289c3e8a6f520d298a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0339bd65d024b17a9f70ffbfaa93da6 = $(`<div id="html_e0339bd65d024b17a9f70ffbfaa93da6" style="width: 100.0%; height: 100.0%;">Motel 6 Lompoc, CA</div>`)[0];
+            popup_514fd57a7e6b43289c3e8a6f520d298a.setContent(html_e0339bd65d024b17a9f70ffbfaa93da6);
+        
+
+        marker_e9ab892c49ab4a1a94fd3dc8248b7624.bindPopup(popup_514fd57a7e6b43289c3e8a6f520d298a)
+        ;
+
+        
+    
+    
+            var marker_b54aa4b94c64425f9f6cbd4fa61f057a = L.marker(
+                [33.72832, -116.23174],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_c317412201fe41a2ae501531f3904dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b54aa4b94c64425f9f6cbd4fa61f057a.setIcon(icon_c317412201fe41a2ae501531f3904dcd);
+        
+    
+        var popup_15d9bbc351134730bd9cf25499916228 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4dce462424447dc93b60f7ec6e37275 = $(`<div id="html_d4dce462424447dc93b60f7ec6e37275" style="width: 100.0%; height: 100.0%;">Motel 6, Palm Springs, CA</div>`)[0];
+            popup_15d9bbc351134730bd9cf25499916228.setContent(html_d4dce462424447dc93b60f7ec6e37275);
+        
+
+        marker_b54aa4b94c64425f9f6cbd4fa61f057a.bindPopup(popup_15d9bbc351134730bd9cf25499916228)
+        ;
+
+        
+    
+    
+            var marker_dc0df8e2ecd54c89934b9b59fabe31ff = L.marker(
+                [34.58349, -118.1354],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_b2733eac336d41bfaf45271656f180be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc0df8e2ecd54c89934b9b59fabe31ff.setIcon(icon_b2733eac336d41bfaf45271656f180be);
+        
+    
+        var popup_542dd42747d3463990c3f5868d102a11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb300cc124094dfaa25b82bf65e89b08 = $(`<div id="html_cb300cc124094dfaa25b82bf65e89b08" style="width: 100.0%; height: 100.0%;">Motel 6 Palmdale, CA</div>`)[0];
+            popup_542dd42747d3463990c3f5868d102a11.setContent(html_cb300cc124094dfaa25b82bf65e89b08);
+        
+
+        marker_dc0df8e2ecd54c89934b9b59fabe31ff.bindPopup(popup_542dd42747d3463990c3f5868d102a11)
+        ;
+
+        
+    
+    
+            var marker_fbc43cb3ffef4b508acea3189d1a1ff7 = L.marker(
+                [36.07293, -119.03835],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_238dc6b51cf54d74819b1b44be6cc96d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fbc43cb3ffef4b508acea3189d1a1ff7.setIcon(icon_238dc6b51cf54d74819b1b44be6cc96d);
+        
+    
+        var popup_00f84f44eada492e80167296d82ad358 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_430146c6ad444b99b37d7629f33e8dd6 = $(`<div id="html_430146c6ad444b99b37d7629f33e8dd6" style="width: 100.0%; height: 100.0%;">Motel 6 Porterville, CA</div>`)[0];
+            popup_00f84f44eada492e80167296d82ad358.setContent(html_430146c6ad444b99b37d7629f33e8dd6);
+        
+
+        marker_fbc43cb3ffef4b508acea3189d1a1ff7.bindPopup(popup_00f84f44eada492e80167296d82ad358)
+        ;
+
+        
+    
+    
+            var marker_10169e2c4d9e4b77a4679aa136c7e9a3 = L.marker(
+                [35.31847, -119.03408],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_e241c9cd947f41ca8a58d11a4cff4ccb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_10169e2c4d9e4b77a4679aa136c7e9a3.setIcon(icon_e241c9cd947f41ca8a58d11a4cff4ccb);
+        
+    
+        var popup_a7bf543307514b33a1469c4208188e09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59307bda04f84b44a14357ac36f6cba4 = $(`<div id="html_59307bda04f84b44a14357ac36f6cba4" style="width: 100.0%; height: 100.0%;">Motel 6 Bakersfield, CA - South</div>`)[0];
+            popup_a7bf543307514b33a1469c4208188e09.setContent(html_59307bda04f84b44a14357ac36f6cba4);
+        
+
+        marker_10169e2c4d9e4b77a4679aa136c7e9a3.bindPopup(popup_a7bf543307514b33a1469c4208188e09)
+        ;
+
+        
+    
+    
+            var marker_248a1c3c29a64a31985aaa21cb84c862 = L.marker(
+                [35.37275, -119.04612],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_4e382b7bb13640a68c48660d0ef66cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_248a1c3c29a64a31985aaa21cb84c862.setIcon(icon_4e382b7bb13640a68c48660d0ef66cc3);
+        
+    
+        var popup_01392412868a4c8682271d3d9dbb3812 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5089ffb471df495e82f371488eded741 = $(`<div id="html_5089ffb471df495e82f371488eded741" style="width: 100.0%; height: 100.0%;">Motel 6 Bakersfield, CA - Convention Center</div>`)[0];
+            popup_01392412868a4c8682271d3d9dbb3812.setContent(html_5089ffb471df495e82f371488eded741);
+        
+
+        marker_248a1c3c29a64a31985aaa21cb84c862.bindPopup(popup_01392412868a4c8682271d3d9dbb3812)
+        ;
+
+        
+    
+    
+            var marker_6933ea242d314c1389968ef1066e9d68 = L.marker(
+                [35.35598, -118.91244],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_2204307b5799428790b2ac4f5843ee79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6933ea242d314c1389968ef1066e9d68.setIcon(icon_2204307b5799428790b2ac4f5843ee79);
+        
+    
+        var popup_a67ba93ab4d14af08ba6fa803d4ffd7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e684a14d3314849a3eff97696a3f016 = $(`<div id="html_4e684a14d3314849a3eff97696a3f016" style="width: 100.0%; height: 100.0%;">Motel 6 Bakersfield, CA - East</div>`)[0];
+            popup_a67ba93ab4d14af08ba6fa803d4ffd7c.setContent(html_4e684a14d3314849a3eff97696a3f016);
+        
+
+        marker_6933ea242d314c1389968ef1066e9d68.bindPopup(popup_a67ba93ab4d14af08ba6fa803d4ffd7c)
+        ;
+
+        
+    
+    
+            var marker_ae632c20f20d435483c193db29e425df = L.marker(
+                [36.7927465859112, -119.789878461899],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_9c83de6117e14b07a1964d7044bcc349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ae632c20f20d435483c193db29e425df.setIcon(icon_9c83de6117e14b07a1964d7044bcc349);
+        
+    
+        var popup_afd3c8a49022442b994af598d2fd5ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a04ee4325da415b90975cb1bb396228 = $(`<div id="html_7a04ee4325da415b90975cb1bb396228" style="width: 100.0%; height: 100.0%;">Motel 6 Fresno, CA - Blackstone South</div>`)[0];
+            popup_afd3c8a49022442b994af598d2fd5ca2.setContent(html_7a04ee4325da415b90975cb1bb396228);
+        
+
+        marker_ae632c20f20d435483c193db29e425df.bindPopup(popup_afd3c8a49022442b994af598d2fd5ca2)
+        ;
+
+        
+    
+    
+            var marker_672f05b7b33347b3a0893560dd1771e3 = L.marker(
+                [36.7971454248512, -119.785243605093],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_cd35fce20d32448491209e359cdbad79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_672f05b7b33347b3a0893560dd1771e3.setIcon(icon_cd35fce20d32448491209e359cdbad79);
+        
+    
+        var popup_60f41ff48e244b81b73383c50434f49d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee2729f721a244e894598ba282f22324 = $(`<div id="html_ee2729f721a244e894598ba282f22324" style="width: 100.0%; height: 100.0%;">Motel 6 Fresno, CA - Blackstone North</div>`)[0];
+            popup_60f41ff48e244b81b73383c50434f49d.setContent(html_ee2729f721a244e894598ba282f22324);
+        
+
+        marker_672f05b7b33347b3a0893560dd1771e3.bindPopup(popup_60f41ff48e244b81b73383c50434f49d)
+        ;
+
+        
+    
+    
+            var marker_7d9e83692079494ea6b29f1bc75e80eb = L.marker(
+                [36.2239713986628, -119.334579644649],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_b71da359f9774ac5867bcd4b9b1ab0fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7d9e83692079494ea6b29f1bc75e80eb.setIcon(icon_b71da359f9774ac5867bcd4b9b1ab0fe);
+        
+    
+        var popup_c0794420f56f4672915aa0bf73c138cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ff6a038396e4769b02ec6d0bd8e235c = $(`<div id="html_3ff6a038396e4769b02ec6d0bd8e235c" style="width: 100.0%; height: 100.0%;">Motel 6 Tulare</div>`)[0];
+            popup_c0794420f56f4672915aa0bf73c138cf.setContent(html_3ff6a038396e4769b02ec6d0bd8e235c);
+        
+
+        marker_7d9e83692079494ea6b29f1bc75e80eb.bindPopup(popup_c0794420f56f4672915aa0bf73c138cf)
+        ;
+
+        
+    
+    
+            var marker_f9ec09d8fa52456f82d19931d80c7124 = L.marker(
+                [34.6746046412298, -118.159469874088],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_ba1266beac6d4584919d4b8d3be4daad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f9ec09d8fa52456f82d19931d80c7124.setIcon(icon_ba1266beac6d4584919d4b8d3be4daad);
+        
+    
+        var popup_ca3a8e92ebf04a7b93bc57fe3f78187c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e3e34167d644d2f8c006d757d34c330 = $(`<div id="html_3e3e34167d644d2f8c006d757d34c330" style="width: 100.0%; height: 100.0%;">Motel 6 Lancaster, CA</div>`)[0];
+            popup_ca3a8e92ebf04a7b93bc57fe3f78187c.setContent(html_3e3e34167d644d2f8c006d757d34c330);
+        
+
+        marker_f9ec09d8fa52456f82d19931d80c7124.bindPopup(popup_ca3a8e92ebf04a7b93bc57fe3f78187c)
+        ;
+
+        
+    
+    
+            var marker_4646bcb67dcb4c15aa033a3c82517074 = L.marker(
+                [36.2559903893763, -120.246956685131],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_9ca6d0edde984db1bc9331e221cd2a0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4646bcb67dcb4c15aa033a3c82517074.setIcon(icon_9ca6d0edde984db1bc9331e221cd2a0e);
+        
+    
+        var popup_40726b5bce44430790d5aeee704e1c35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc6e3d0cc3e646c5bdfcd7c1f561f1c0 = $(`<div id="html_dc6e3d0cc3e646c5bdfcd7c1f561f1c0" style="width: 100.0%; height: 100.0%;">Motel 6 Coalinga, CA </div>`)[0];
+            popup_40726b5bce44430790d5aeee704e1c35.setContent(html_dc6e3d0cc3e646c5bdfcd7c1f561f1c0);
+        
+
+        marker_4646bcb67dcb4c15aa033a3c82517074.bindPopup(popup_40726b5bce44430790d5aeee704e1c35)
+        ;
+
+        
+    
+    
+            var marker_1f277f7b112549268480202d18d86ef3 = L.marker(
+                [32.6976044268172, -114.605117595011],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_faf76e14c7c145b689422c1a0189befd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f277f7b112549268480202d18d86ef3.setIcon(icon_faf76e14c7c145b689422c1a0189befd);
+        
+    
+        var popup_741b861514f94849a894c90e8736b1ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b7970c44974d809f10e45cbbf8fd76 = $(`<div id="html_f0b7970c44974d809f10e45cbbf8fd76" style="width: 100.0%; height: 100.0%;">Motel 6 Yuma, AZ </div>`)[0];
+            popup_741b861514f94849a894c90e8736b1ff.setContent(html_f0b7970c44974d809f10e45cbbf8fd76);
+        
+
+        marker_1f277f7b112549268480202d18d86ef3.bindPopup(popup_741b861514f94849a894c90e8736b1ff)
+        ;
+
+        
+    
+    
+            var marker_dc1030200ae841fb88591234ad67e278 = L.marker(
+                [39.7850606361046, -105.026598018144],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_4b26d8487f7d47d388ec66092e16fa95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc1030200ae841fb88591234ad67e278.setIcon(icon_4b26d8487f7d47d388ec66092e16fa95);
+        
+    
+        var popup_00224d19434a43d68da6ada6fd5adb6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01e239e7bb40418aa54ee6d427fd2899 = $(`<div id="html_01e239e7bb40418aa54ee6d427fd2899" style="width: 100.0%; height: 100.0%;">Motel 6, Denver, CO</div>`)[0];
+            popup_00224d19434a43d68da6ada6fd5adb6b.setContent(html_01e239e7bb40418aa54ee6d427fd2899);
+        
+
+        marker_dc1030200ae841fb88591234ad67e278.bindPopup(popup_00224d19434a43d68da6ada6fd5adb6b)
+        ;
+
+        
+    
+    
+            var marker_25d4d8717495409eb2465f4e006675c3 = L.marker(
+                [34.136252969112, -116.078568341572],
+                {}
+            ).addTo(marker_cluster_8d45ca893a474ed98dc9900e2808a437);
+        
+    
+            var icon_12323b65f9124d9992ac51430e03041a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25d4d8717495409eb2465f4e006675c3.setIcon(icon_12323b65f9124d9992ac51430e03041a);
+        
+    
+        var popup_6c88af59031e4b918867570d3a409736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4379c0cbdcb84cd688d501ea6203c17d = $(`<div id="html_4379c0cbdcb84cd688d501ea6203c17d" style="width: 100.0%; height: 100.0%;">Motel 6 Twentynine Palms, CA</div>`)[0];
+            popup_6c88af59031e4b918867570d3a409736.setContent(html_4379c0cbdcb84cd688d501ea6203c17d);
+        
+
+        marker_25d4d8717495409eb2465f4e006675c3.bindPopup(popup_6c88af59031e4b918867570d3a409736)
+        ;
+
+        
+    
+</script>
